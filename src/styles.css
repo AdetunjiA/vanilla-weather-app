@@ -1,3 +1,41 @@
+body{
+    font-family: arial,sans-serif;
+    font-size: 14px;
+}
 h1{
     color:black;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.weather-app {
+border:1px solid;
+max-width: 600px;
+margin: 20px auto;
+padding: 20px;
+border-radius: 5px;
+margin-bottom: 0;
+}
+.app-wrapper {
+/* text-decoration: none; */
+max-width: 600px;
+margin: 30px auto;
+
+   
+}
+/* .overview{
+margin-bottom: 20px;
+} */
+.github{
+text-decoration: none;
+}
+ul {
+margin: 0;
+padding: 0;
+}
+li {
+list-style: none;
+text-align: left;
+line-height: 20px;
+margin: 0;
+padding: 0;
 }

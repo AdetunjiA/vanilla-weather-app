@@ -9,8 +9,9 @@
     <title>Weather App</title>
 </head>
 <body>
-    <div class="container">
-        <div class="weather-app">
+<div class="container">
+        <div class="app-wrapper">
+            <div class="weather-app">
     <h1>
         New York
     </h1>
@@ -24,27 +25,35 @@
     </ul>
     <div class="row">
         <div class="col-6">
-            <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="clear" class="src">
-            12°C|°F
-        </div>
-        <div class="col-6">
-            <ul>
-                <li>
-                Presipitation: 0%
-                </li>
-               <li>
-                    Humidity: 73%
-               </li>
-               <li>
-                wind: 4km/h
-                </li>
-            </ul>
-        </div>
-        </div>
+            <div class="clearfix">
+                <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="clear" class="float-left">
+            
+                12°C|°F
+            
+            </div>
+                </div>
+                    <div class="col-6">
+                        
+                            <ul>
+                                <li>
+                                    Presipitation: 0%
+                                </li>
+                                <li>
+                                    Humidity: 73%
+                                </li>
+                                <li>
+                                    wind: 4km/h
+                                </li>
+                            </ul>
+                    </div> 
+        <small>
+        <a href="https://github.com/AdetunjiA/vanilla-weather-app" class="github" target="_blank"> Open-source code</a>, by Adeola Adetunji
+        </small>
     </div>
     </div>
+</div>
+</div>
     <script src="src/app.js">
     </script>
-    
 </body>
 </html>
