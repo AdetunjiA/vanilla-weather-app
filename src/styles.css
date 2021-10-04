@@ -22,9 +22,25 @@ margin: 30px auto;
 
    
 }
+.float-left {
+  float: left;
+}
 /* .overview{
 margin-bottom: 20px;
 } */
+.weather-temperature img{
+margin-left: 20px;
+}
+.weather-temperature strong{
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 400;
+}
+.weather-temperature .unit {
+    position: relative;
+    font: 16px;
+    top: -34px;
+}
 .github{
 text-decoration: none;
 }
