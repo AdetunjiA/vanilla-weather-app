@@ -46,6 +46,9 @@ margin-bottom: 20px;
 .github {
   text-decoration: none;
 }
+#fahrenheit-link {
+  text-decoration: none;
+}
 ul {
   margin: 0;
   padding: 0;

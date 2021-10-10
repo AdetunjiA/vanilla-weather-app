@@ -15,6 +15,7 @@ function formatDate(timestamp) {
 function displayTemperature(response) {
   console.log(response);
   console.log(response.data.main.temp);
+  console.log(response.data.weather[0].icon);
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = `${temperature}`;
@@ -28,7 +29,13 @@ function displayTemperature(response) {
   speedElement.innerHTML = Math.round(response.data.wind.speed);
   let dayElement = document.querySelector("#dayTime");
   dayElement.innerHTML = formatDate(response.data.dt * 1000);
-  //` ${day} ${hour}:${minute} ${amOrPm} `;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+
+  celciusTemp = response.data.main.temp;
 }
 
 function searchCity(event) {
@@ -40,5 +47,18 @@ function searchCity(event) {
   axios.get(`${apiUrl}`).then(displayTemperature);
   console.log(apiUrl);
 }
+
+function displayFahrenheitTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celciusTemp * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
+
+let celciusTemp = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
