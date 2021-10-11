@@ -28,7 +28,11 @@
                 id="search-input"
               />
             </div>
-            <button type="submit" class="btn btn-primary">Search</button>
+            <span
+              ><button type="submit" class="btn btn-primary">
+                Search
+              </button></span
+            >
           </form>
           <h1 id="city">New York</h1>
           <ul>
@@ -47,18 +51,18 @@
                 <div class="float-left">
                   <strong id="temperature">12</strong
                   ><span class="unit">
-                    °C| <a href="#" id="fahrenheit-link">°F</a>
+                    <a href="#" id="celcius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
                   </span>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-6 weather-element">
-            <ul>
-              <li>Presipitation: 0%</li>
-              <li>Humidity: <span id="humidity">0</span>%</li>
-              <li>wind:<span id="speed">4</span> km/h</li>
-            </ul>
+            <div class="col-6 weather-element">
+              <ul>
+                <li>Humidity: <span id="humidity">0</span>%</li>
+                <li>wind:<span id="speed">4</span> km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
         <small>

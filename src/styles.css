@@ -20,6 +20,13 @@ h1 {
   max-width: 600px;
   margin: 30px auto;
 }
+/* .btn-primary {
+  display: inline-block;
+} */
+#search {
+  display: inline-block;
+  padding-right: 20px;
+}
 .float-left {
   float: left;
 }
@@ -49,6 +56,9 @@ margin-bottom: 20px;
 #fahrenheit-link {
   text-decoration: none;
 }
+#celcius-link {
+  text-decoration: none;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -60,4 +70,8 @@ li {
   margin: 0;
   padding: 0;
   text-transform: capitalize;
+}
+.weather-temperature .active {
+  color: black;
+  cursor: default;
 }
