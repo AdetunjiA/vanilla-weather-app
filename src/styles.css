@@ -20,9 +20,6 @@ h1 {
   max-width: 600px;
   margin: 30px auto;
 }
-/* .btn-primary {
-  display: inline-block;
-} */
 #search {
   display: inline-block;
   padding-right: 20px;
@@ -30,9 +27,6 @@ h1 {
 .float-left {
   float: left;
 }
-/* .overview{
-margin-bottom: 20px;
-} */
 .weather-temperature img {
   margin-left: 20px;
 }
@@ -46,10 +40,7 @@ margin-bottom: 20px;
   font: 16px;
   top: -34px;
 }
-/* .weather-element{
-    float: left;
-    color:blue;
-} */
+
 .github {
   text-decoration: none;
 }
@@ -69,6 +60,8 @@ li {
   line-height: 20px;
   margin: 0;
   padding: 0;
+}
+li:first-letter {
   text-transform: capitalize;
 }
 .weather-temperature .active {
