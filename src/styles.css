@@ -68,3 +68,14 @@ li:first-letter {
   color: black;
   cursor: default;
 }
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.weather-forecate-min {
+  opacity: 0.5;
+}

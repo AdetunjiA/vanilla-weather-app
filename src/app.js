@@ -63,6 +63,30 @@ function displayelciusTemp(event) {
   celciusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row"> `;
+  let days = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+              <div class="col-2">
+                  <div class="weather-forecast-date">${day}</div>
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                    alt=""
+                  />
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-max">17</span>
+                  <span class="weather-forecate-min">10</span>
+                </div>
+              </div>
+            `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
@@ -74,3 +98,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayelciusTemp);
+displayForecast();
