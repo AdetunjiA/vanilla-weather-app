@@ -14,20 +14,15 @@ h1 {
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 0;
-  background-color: rgb(151, 203, 228);
+  background-color: rgb(69, 152, 230);
 }
 .app-wrapper {
-  /* text-decoration: none; */
   max-width: 600px;
   margin: 30px auto;
 }
-/* #search-form {
-  position: relative;
-} */
 #search {
   display: inline-block;
   padding-right: 20px;
-  /* position: relative; */
 }
 .clearfix weather-temperature {
   float: left;
@@ -89,11 +84,13 @@ li:first-letter {
 }
 #sky {
   overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
 }
 #clouds {
-  margin: 0 auto;
   width: 200%;
-  max-width: none;
+  max-width: 600%;
   height: 200px;
   background-image: url("https://i.pinimg.com/736x/0f/89/f5/0f89f50a7974571767412679334c8a78.jpg");
   background-size: auto;
