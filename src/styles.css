@@ -7,6 +7,10 @@ h1 {
   font-size: 24px;
   margin-bottom: 0;
 }
+h1:first-letter {
+  text-transform: uppercase;
+}
+
 .weather-app {
   border: 1px solid;
   max-width: 600px;
